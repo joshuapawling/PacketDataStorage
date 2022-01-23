@@ -1,7 +1,9 @@
 import encoder 
+import keepalive
 
 def main():
-    encoder.encode("RatatouilleEnding","RatatouilleEndingVideo.mp4",.1,.1,10)
+    keepalive.keep_alive()
+    encoder.encode(f"ExampleVideo",f"video.mp4",.1,.1,30)
 
 if __name__== "__main__":
     main()
